@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colômbia</title>
+
+    <style>
+        body{
+            background: linear-gradient(180deg,#0d1b2a,#1b263b);
+        }
+
+        .cbc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(90deg,#fcd116,#003893,#ce1126);
+        }
+
+        #texto{
+            font-size: 3rem;
+            font-style: italic;
+        }
+
+        #link{
+            display: flex;
+            justify-content: center;
+        }
+
+        #link a{
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #historia,#trofeu,#idolo,#jogador{
+            display: none;
+        }
+
+        p{
+            font-size: 1.3rem;
+            font-style: italic;
+            text-indent: 20px;
+        }
+
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .carda{
+            width:220px;
+            background:#1b263b;
+            border-radius:10px;
+            overflow:hidden;
+            margin:10px;
+            transition:0.3s;
+        }
+
+        .carda img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .carda:hover{
+            transform:scale(1.1);
+        }
+
+        .nome{
+            text-align:center;
+            opacity:0;
+            transition:0.5s;
+        }
+
+        .carda:hover .nome{
+            opacity:1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="cbc">
+    <h1 id="texto">Seleção Colombiana</h1>
+</header>
+
+<nav id="link">
+    <a href="#" onclick="historia()">historia</a>
+    <a href="#" onclick="trofeu()">trofeus</a>
+    <a href="#" onclick="idolo()">idolos</a>
+    <a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<!-- HISTORIA -->
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Colombiana de Futebol tem uma história marcada por evolução e talento. Embora não tenha o mesmo número de títulos que outras seleções sul-americanas, a Colômbia se destacou por revelar grandes jogadores e montar equipes competitivas.
+
+O maior momento da história da seleção foi a conquista da Copa América de 2001, quando venceu o torneio de forma invicta jogando em casa.
+
+A Colômbia também participou de várias Copas do Mundo, com destaque para 2014, quando chegou às quartas de final com uma campanha brilhante liderada por James Rodríguez.
+
+Hoje, a seleção continua sendo uma equipe forte e respeitada na América do Sul. 🇨🇴
+</p>
+</article>
+
+<!-- TROFEUS -->
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A principal conquista da Seleção Colombiana é a Copa América de 2001, onde a equipe fez uma campanha histórica sem sofrer gols.
+
+Além disso, a Colômbia já teve boas participações em competições internacionais, mostrando evolução constante ao longo dos anos.
+</p>
+
+<div class="card">
+    <div class="carda">
+        <img src="img/copaamerica.jpg">
+        <div class="nome"><h2>Copa América: 1</h2></div>
+    </div>
+</div>
+</article>
+
+<!-- IDOLOS -->
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Colômbia revelou grandes talentos que marcaram época no futebol mundial.
+
+Carlos Valderrama é um dos maiores ídolos da história do país, conhecido pelo seu estilo único e visão de jogo.
+
+James Rodríguez brilhou na Copa do Mundo de 2014, sendo artilheiro da competição.
+
+Radamel Falcao também é um dos grandes nomes, conhecido por seus gols e liderança.
+</p>
+
+<div class="card">
+    <div class="carda">
+        <img src="img/valderrama.jpg">
+        <div class="nome"><h2>Valderrama</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/james.jpg">
+        <div class="nome"><h2>James Rodríguez</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/falcao.jpg">
+        <div class="nome"><h2>Falcao</h2></div>
+    </div>
+</div>
+</article>
+
+<!-- ELENCO -->
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/luisdiaz.jpg">
+        <div class="nome"><h2>Luis Díaz</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/duran.jpg">
+        <div class="nome"><h2>Jhon Durán</h2></div>
+    </div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/james.jpg">
+        <div class="nome"><h2>James Rodríguez</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/lerma.jpg">
+        <div class="nome"><h2>Jefferson Lerma</h2></div>
+    </div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/davinson.jpg">
+        <div class="nome"><h2>Davinson Sánchez</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/mina.jpg">
+        <div class="nome"><h2>Yerry Mina</h2></div>
+    </div>
+</div>
+
+<h2 style="text-align:center">Goleiro</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/ospina.jpg">
+        <div class="nome"><h2>David Ospina</h2></div>
+    </div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+    document.getElementById("historia").style.display="none";
+    document.getElementById("trofeu").style.display="none";
+    document.getElementById("idolo").style.display="none";
+    document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+    esconderTudo();
+    document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+    esconderTudo();
+    document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+    esconderTudo();
+    document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+    esconderTudo();
+    document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

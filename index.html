@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/brasil.png" type="image/x-icon">
+    <title>inicio</title>
+    <style>
+        html{
+scroll-behavior: smooth;
+
+        }
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+    transition: background 1s ease;
+}
+.cabeca{
+
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link nav{
+    margin-top: -20px;
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+.link a:hover{
+    color: yellow;
+}
+
+.america{
+
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;
+
+margin: 10px;
+
+
+}
+.pais{
+    
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
+.pais img{
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px black;
+    transition: transform 1s ease;
+}
+.pais img:hover{
+transform: translateY(-20px);
+
+}
+
+.pais h2{
+    opacity: 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px  white;
+    text-indent: -70px;
+    font-style: italic;
+    transition: opacity 1s ease;
+}
+.pais:hover  h2{
+    opacity: 1;
+}
+
+.link a{
+font-style: italic;
+
+
+
+}
+.titulo{
+    text-align: center;
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    padding: 15px;
+    border-radius: 10px;
+    color: #e2e8f0;
+    width: 100%;
+    margin: 40px auto;
+}
+
+
+
+    </style>
+</head>
+<body onscroll="aparecer()" >
+    <header class="cabeca" id="cbc">
+        <p style="align-self: flex-start;">modo escuro: </p>
+        <input type="checkbox" name="black" id="black" onclick="black()" style="align-self: flex-start; ">
+
+        <h1 style="text-align: 
+        center; transform: translateY(-30px);">catalogo de seleçao</h1>
+
+        <div class="link">
+<nav> 
+    
+<a href="#america">America</a> 
+<a href="#europa">Europa</a>
+<a href="#africa">Africa</a>
+<a href="#asia">Asia</a>
+
+
+</nav>
+
+
+        </div>
+
+
+    </header>
+        <h1 id="america" style="text-align: center; font: 4.1em italic;">America</h1>
+
+    <main>
+<section class="america" id="america">
+    <div class="pais" onmouseenter="entra()" onmouseout="sai()">
+        <a href="br.html"><img src="img/brasil.png" alt="" height="60%"  >
+</a>
+<div class="nome"id="br">
+    <h2>brasil</h2>
+</div>
+
+    </div>
+
+      <div class="pais">
+<img src="img/argetina.png" alt="" height="60%" >
+<div class="nome">
+    <h2>argetina</h2>
+</div>
+
+
+
+    </div>
+
+  <div class="pais">
+<img src="img/colombia.png" alt="" height="60%" >
+<div class="nome">
+    <h2>colombia</h2>
+</div>
+
+    </div>
+
+  <div class="pais">
+<img src="img/paragui.png" alt="" height="60%" >
+<div class="nome">
+    <h2>paragui</h2>
+</div>
+
+
+    </div>
+
+  <div class="pais">
+<img src="img/panama.png" alt="" height="60%" >
+<div class="nome">
+    <h2>panama</h2>
+</div>
+
+
+    </div>
+
+  <div class="pais">
+<img src="img/estados unidos.png" alt="" height="60%" >
+<div class="nome">
+    <h2>estados unidos</h2>
+</div>
+
+
+    </div>
+
+  <div class="pais">
+<img src="img/haiti.png" alt="" height="60%" >
+<div class="nome">
+<h2>haiti</h2>
+
+</div>
+
+
+    </div>
+
+  <div class="pais">
+<img src="img/curaçao.png" alt="" height="60%" >
+<div class="nome">
+    <h2>cuaçao</h2>
+</div>
+
+
+    </div>
+      <div class="pais">
+<img src="img/equador.png" alt="" height="60%" >
+<div class="nome">
+    <h2>equador</h2>
+</div>
+
+
+    </div>
+  <div class="pais">
+<img src="img/uruguai.png" alt="" height="60%" >
+<div class="nome">
+    <h2>uruguai</h2>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+        <h1 class="titulo" style="text-align: center; font: 4.1em italic;">europa</h1>
+
+<section class="america" id="europa">
+<div class="pais">
+<img src="img/alemanha.png" alt="" height="60%" >
+<div class="nome">
+    <h2>alemanha</h2>
+</div>
+    </div>
+
+    <div class="pais">
+<img src="img/autria.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Áustria</h2>
+</div>
+    </div>
+
+    <div class="pais">
+<img src="img/belgica.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Bélgica</h2>
+</div>
+    </div>
+
+    <div class="pais">
+<img src="img/bosnia.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Bósnia e Herzegovina</h2>
+</div>
+    </div>
+
+    
+    <div class="pais">
+<img src="img/croacia.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Croácia</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/escocia.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Escócia</h2>
+</div>
+    </div>
+
+    
+    <div class="pais">
+<img src="img/espanha.png" alt="" height="60%" >
+<div class="nome">
+    <h2>espanha</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/franca.png" alt="" height="60%" >
+<div class="nome">
+    <h2>frança</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/holanda.png" alt="" height="60%" >
+<div class="nome">
+    <h2>holanda</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/inglaterra.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Inglaterra</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/noruega.png" alt="" height="60%" >
+<div class="nome">
+    <h2>noruega</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/portugal.png" alt="" height="60%" >
+<div class="nome">
+    <h2>portugal</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/reoublica theca.png" alt="" height="60%" >
+<div class="nome">
+    <h2>República Tcheca</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/suecia.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Suécia</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/suica.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Suíça</h2>
+</div>
+    </div>
+    
+    <div class="pais">
+<img src="img/turquia.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Turquia</h2>
+</div>
+    </div>
+
+
+
+
+
+</section>
+        <h1 class="titulo" style="text-align: center; font: 4.1em italic;">AFRICA</h1>
+
+<section class="america" id="africa">
+     <div class="pais">
+<img src="img/argelia.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Argélia</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/camaroes.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Camarões</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/costa do mRFIM.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Costa do Marfim</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/EGITO.png" alt="" height="60%" >
+<div class="nome">
+    <h2>egito</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/GANA.png" alt="" height="60%" >
+<div class="nome">
+    <h2>gana</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/MALI.png" alt="" height="60%" >
+<div class="nome">
+    <h2>mali</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/MARROCOS.png" alt="" height="60%" >
+<div class="nome">
+    <h2>marrocos</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/NIGERIA.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Nigéria</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/SENEGAL.png" alt="" height="60%" >
+<div class="nome">
+    <h2>senegal</h2>
+</div>
+    </div>
+
+    <div class="pais">
+<img src="img/TUNISIA.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Tunísia</h2>
+</div>
+    </div>
+
+
+
+
+
+
+</section>
+        <h1 class="titulo" style="text-align: center; font: 4.1em italic;">Asia</h1>
+        <section class="america" id="asia">
+
+             <div class="pais">
+<img src="img/ARABIA SAUIDTA.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Arábia Saudita</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/CATAR.png" alt="" height="60%" >
+<div class="nome">
+    <h2>catar</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/EMIRADOS ARABES.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Emirados Árabes Unidos</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/IRAQUE.png" alt="" height="60%" >
+<div class="nome">
+    <h2>iraque</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/JORDANIA.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Jordânia</h2>
+</div>
+    </div>
+
+     <div class="pais">
+<img src="img/OMA.png" alt="" height="60%" >
+<div class="nome">
+    <h2>Omã</h2>
+</div>
+    </div>
+
+
+        </section>
+
+
+
+
+
+    </main>
+    <footer>
+
+
+    </footer>
+
+    <script>
+function black(){
+let fundo= document.getElementById("black")
+let body=document.body
+let texto=document.getElementsByTagName("h1")
+let cbc=document.getElementById("cbc")
+if(fundo.checked){
+    body.style.background="#2d3748"
+    body.style.color="white"
+cbc.style.background = "linear-gradient(90deg, #0f172a, #1e293b)"    
+
+
+
+
+}else{
+        body.style.background="aliceblue"
+            body.style.color="black"
+cbc.style.background = "linear-gradient(90deg, #1e3c72, #2a5298)"
+
+
+
+}
+
+}
+function aparecer(){
+    let card= document.querySelectorAll(".pais")
+    card.forEach(function(item){
+        let pose = item.getBoundingClientRect().top
+let altura= window.innerHeight
+if(pose< altura-100){
+    item.style.opacity="1"
+    item.style.transform = "translateY(0px)"
+
+
+}
+
+
+    }
+
+    )
+
+}
+
+
+
+
+    </script>
+</body>
+</html>
+
+    

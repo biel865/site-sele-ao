@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/brasil.png" type="image/x-icon">
+
+    <title>brasil</title>
+    <style>
+        body{
+
+                background: linear-gradient(180deg,#0d1b2a,#1b263b);
+
+        }
+.cbc{
+
+display: flex;
+justify-content: center;
+align-items: center;
+height: 150px;
+width: 100%;
+    background: linear-gradient(90deg,#009c3b,#ffdf00);
+
+
+}
+#texto{
+font-size: 3rem;
+font-style: italic;
+
+}
+#link{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#link a{
+    padding: 15px;
+    text-decoration: none;
+}
+#historia{
+display: none;
+
+}
+#trofeu{
+    display: none;
+}
+#idolo{
+    display: none;
+}
+#jogador{
+    display: none;
+}
+p{
+    font-size: 1.3rem;
+    font-style: italic;
+    text-indent: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+}
+.card{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+transform:scale(1.1);
+
+}
+.nome {
+    text-align: center;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.carda:hover .nome {
+    opacity: 1;
+}
+
+
+    </style>
+</head>
+<body >
+    <header class="cbc">
+        <h1 id="texto" style="text-align: center;">seleçao brasileira</h1>
+      
+
+    </header>
+      <nav id="link">
+            <a href="#" onclick="historia()" id="lhistoria">historia</a>
+             <a href="#" onclick="trofeu()">trofeus</a>
+            <a href="#" onclick="idolo()">idolos</a>
+            <a href="#" onclick="jogador()">seleçao atual</a>
+
+        </nav>
+
+
+    <main>
+
+        <section>
+<article id="historia">
+<h1>
+    historia:
+</h1>
+<p>
+    
+A Seleção Brasileira de Futebol foi fundada em 1914 e, desde então, se tornou uma das equipes mais importantes e respeitadas do mundo. Representando o Brasil em competições internacionais, a seleção é conhecida pelo seu estilo de jogo ofensivo, criativo e técnico, muitas vezes chamado de “futebol arte”.
+
+O Brasil foi um dos países participantes da primeira Copa do Mundo, realizada em 1930, e é até hoje a única seleção que disputou todas as edições do torneio. Ao longo das décadas, a equipe construiu uma trajetória marcada por grandes conquistas e jogadores históricos.
+
+O auge da Seleção começou nas décadas de 1950 e 1960, com a conquista das Copas do Mundo de 1958 e 1962, lideradas por Pelé, considerado um dos maiores jogadores de todos os tempos. Em 1970, o Brasil encantou o mundo com um dos melhores times da história, conquistando seu terceiro título mundial.
+
+Depois disso, a Seleção voltou a conquistar a Copa do Mundo em 1994, nos Estados Unidos, e em 2002, na Coreia do Sul e no Japão, tornando-se a maior campeã da história da competição, com cinco títulos.
+
+Além das Copas do Mundo, o Brasil também possui diversos títulos da Copa América e da Copa das Confederações. Ao longo dos anos, revelou grandes jogadores como Zico, Romário, Ronaldo, Ronaldinho Gaúcho e Neymar.
+
+Hoje, a Seleção Brasileira continua sendo uma das principais forças do futebol mundial, carregando a tradição, a paixão e o orgulho de milhões de torcedores. 🇧🇷
+</p>
+
+</article>     
+<article id="trofeu">
+<h1>
+trofeus:
+</h1>
+<p>A Seleção Brasileira é a maior campeã da história do futebol mundial e possui uma das coleções de troféus mais impressionantes entre todas as seleções.
+
+O principal destaque são as cinco conquistas da Copa do Mundo FIFA, nos anos de 1958, 1962, 1970, 1994 e 2002. Com esses títulos, o Brasil se tornou a seleção com mais vitórias na competição e a única a participar de todas as edições do torneio.
+
+Além do sucesso mundial, o Brasil também se destaca na América do Sul. A seleção conquistou diversas edições da Copa América, sendo uma das maiores vencedoras do continente. Esses títulos mostram a força do Brasil não apenas no cenário global, mas também regional.
+
+Outro título importante é a Copa das Confederações, competição que reunia os campeões de cada continente. O Brasil teve grande destaque nesse torneio, conquistando vários títulos e demonstrando sua superioridade antes das Copas do Mundo.
+
+Ao longo de sua história, a Seleção Brasileira acumulou conquistas importantes, consolidando sua posição como uma das maiores potências do futebol mundial. Seus troféus representam não apenas vitórias, mas também momentos históricos, grandes jogadores e partidas inesquecíveis que marcaram gerações. 🇧🇷</p>
+<div class="card">
+    <div class="carda">
+        <img src="img/jules remet.jpg" alt="" height="200px">
+        <div class="nome"><h2>copa do mundo :5</h2></div>
+
+    </div>
+
+    <div class="carda">
+        <img src="img/copaamerica.jpg" alt="" height="200px">
+        <div class="nome"><h2>copa america :9</h2></div>
+
+    </div>
+    <div class="carda">
+                <img src="img/copa-confedarcao.jpg" alt="" height="200px">
+        <div class="nome"><h2>copa das Confederações:4</h2></div>
+
+        
+
+
+
+
+</div>
+
+</article> 
+
+<article id="idolo">
+<h1>
+idolos:
+</h1>
+<p>Ao longo de sua história, a Seleção Brasileira revelou alguns dos maiores jogadores de futebol de todos os tempos. Esses atletas não apenas conquistaram títulos importantes, mas também encantaram o mundo com seu talento, criatividade e estilo único de jogar.
+
+O maior de todos é Pelé, tricampeão mundial (1958, 1962 e 1970), considerado por muitos o melhor jogador da história do futebol. Seu talento, gols e conquistas colocaram o Brasil no topo do mundo.
+
+Outro grande nome é Zico, conhecido como o “Galinho de Quintino”, que brilhou nas décadas de 1970 e 1980 com sua técnica e habilidade, sendo um dos maiores ídolos mesmo sem conquistar uma Copa do Mundo.
+
+Romário foi o grande destaque da conquista da Copa de 1994, sendo decisivo com seus gols e sua personalidade forte dentro de campo. Já Ronaldo Fenômeno marcou época ao ser protagonista na conquista do penta em 2002, sendo o artilheiro da competição.
+
+Ronaldinho Gaúcho encantou o mundo com seus dribles e jogadas mágicas, trazendo alegria ao futebol brasileiro. Mais recentemente, Neymar se tornou um dos principais nomes da seleção, acumulando gols e sendo referência técnica da equipe por muitos anos.
+
+Esses jogadores ajudaram a construir a identidade da Seleção Brasileira, marcada pelo talento, criatividade e paixão pelo futebol, inspirando gerações de torcedores e atletas em todo o mundo. 🇧🇷</p>
+
+<div class="card">
+    <div class="carda">
+        <img src="img/pele.jpg" alt="" height="300px" onclick="pele()">
+        <div class="nome"><h2>nome do jogador:pele</h2>
+        
+     
+
+        </div>
+
+    </div>
+
+    <div class="carda">
+        <img src="img/zico.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:zico</h2></div>
+
+    </div>
+    <div class="carda">
+                <img src="img/ronaldo.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:ronaldo</h2></div>
+    </div>
+
+    <div class="carda">
+                <img src="img/ronadin.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:ronaldinho gaucho</h2></div>
+    </div>
+    <div class="carda">
+                <img src="img/romario.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:romario</h2></div>
+    </div>
+    <div class="carda">
+                <img src="img/ney.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:neymar</h2></div>
+    </div>
+    
+
+       
+        
+
+
+
+
+
+</article> 
+
+
+<article id="jogador" >
+
+<h2 style="text-align: center;font-size: 3rem;font-style: italic;">zagueiros</h2>
+
+<div class="card">
+<div class="carda">
+                <img src="img/ney.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:neymar</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/vini.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:vinicius jr</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/raphinha.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:raphinha</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/matheus cunha.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:matheus cunha</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/joao pedro.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:joao pedro</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/endrik.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:Endrick</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/estevao.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:estevao</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/luiz henrique.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:luiz henrique</h2></div>
+    </div>
+    
+    <div class="carda">
+                <img src="img/igor thiago.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:igor thiago</h2></div>
+    
+    
+
+
+
+</div>
+</div>
+<h2 style="text-align: center;font-size: 3rem;font-style: italic;">meio campo</h2>
+
+<div class="card" >
+  
+    <div class="carda">
+                <img src="img/casemiro.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:casemiro</h2></div>
+    </div>
+
+          
+    <div class="carda">
+                <img src="img/bruno-.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador: Bruno Guimarães</h2></div>
+    </div>
+          
+    <div class="carda">
+                <img src="img/paqueta.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:lucas paqueta</h2></div>
+</div>
+</div>
+
+<h2 style="text-align: center;font-size: 3rem;font-style: italic;">laterais</h2>
+<div class="card">
+ <div class="carda">
+                <img src="img/danilo.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador: danilo</h2></div>
+</div>
+ <div class="carda">
+                <img src="img/vanderson.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:vaderson</h2></div>
+</div>
+ <div class="carda">
+                <img src="img/renan lodi.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:renan lodi</h2></div>
+</div>
+ <div class="carda">
+                <img src="img/wendell.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:Wendell</h2></div>
+</div>
+
+
+
+
+
+
+</div>
+
+<h2 style="text-align: center;font-size: 3rem;font-style: italic;">zagueiros</h2>
+<div class="card">
+<div class="carda">
+                <img src="img/marquinhos.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:marquinhos</h2></div>
+</div>
+<div class="carda">
+                <img src="img/militao.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:Éder Militão</h2></div>
+</div>
+<div class="carda">
+                <img src="img/bremer.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:bremer</h2></div>
+</div>
+<div class="carda">
+                <img src="img/gabriel magalhaes.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:Gabriel Magalhães</h2></div>
+</div>
+
+
+
+</div>
+<h2 style="text-align: center;font-size: 3rem;font-style: italic;">goleiros:</h2>
+<div class="card">
+
+    <div class="carda">
+                <img src="img/ederson.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:ederson</h2></div>
+</div>
+<div class="carda">
+                <img src="img/alisson.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:allison</h2></div>
+</div>
+<div class="carda">
+                <img src="img/bento.jpg" alt="" height="300px">
+        <div class="nome"><h2>nome do jogador:bento</h2></div>
+</div>
+
+    
+</div>
+
+   
+</article> 
+
+
+
+
+
+
+
+
+            
+        </section>
+
+
+
+
+
+
+    </main>
+<script>
+    function esconderTudo() {
+    document.getElementById("historia").style.display = "none";
+    document.getElementById("trofeu").style.display = "none";
+    document.getElementById("idolo").style.display = "none";
+    document.getElementById("jogador").style.display = "none";
+}
+    function historia(){
+        esconderTudo();
+const historia= document.getElementById("historia")
+historia.style.display="block"
+
+    }
+ function trofeu(){
+            esconderTudo();
+    const trofeu= document.getElementById("trofeu")
+    trofeu.style.display="block"
+
+ }
+ 
+  function idolo(){
+            esconderTudo();
+
+    const idolo= document.getElementById("idolo")
+    idolo.style.display="block"
+
+ }
+ 
+  function jogador(){
+            esconderTudo();
+
+    const jogador= document.getElementById("jogador")
+    jogador.style.display="block"
+
+ }
+ 
+
+
+</script>
+
+
+
+
+</body>
+</html>

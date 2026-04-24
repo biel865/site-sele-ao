@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentina</title>
+    <link rel="shortcut icon" href="img/argetina.png" type="image/x-icon">
+
+    <style>
+        body{
+            background: linear-gradient(180deg,#0a1f44,#1e3a5f);
+        }
+
+        .cbc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 100%;
+            background: linear-gradient(90deg,#74acdf,#ffffff,#74acdf);
+        }
+
+        #texto{
+            font-size: 3rem;
+            font-style: italic;
+        }
+
+        #link{
+            display: flex;
+            justify-content: center;
+        }
+
+        #link a{
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #historia,#trofeu,#idolo,#jogador{
+            display: none;
+        }
+
+        p{
+            font-size: 1.3rem;
+            font-style: italic;
+            text-indent: 20px;
+        }
+
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .carda{
+            width:220px;
+            background:#1e3a5f;
+            border-radius:10px;
+            overflow:hidden;
+            margin:10px;
+            transition:0.3s;
+        }
+
+        .carda img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .carda:hover{
+            transform:scale(1.1);
+        }
+
+        .nome{
+            text-align:center;
+            opacity:0;
+            transition:0.5s;
+        }
+
+        .carda:hover .nome{
+            opacity:1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="cbc">
+    <h1 id="texto">Seleção Argentina</h1>
+</header>
+
+<nav id="link">
+    <a href="#" onclick="historia()">historia</a>
+    <a href="#" onclick="trofeu()">trofeus</a>
+    <a href="#" onclick="idolo()">idolos</a>
+    <a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Argentina de Futebol é uma das mais tradicionais do mundo. Fundada no início do século XX, a equipe rapidamente se tornou uma potência no futebol sul-americano.
+
+A Argentina conquistou sua primeira Copa do Mundo em 1978, jogando em casa. Em 1986, liderada por Diego Maradona, venceu novamente com uma campanha histórica no México.
+
+Após um longo período sem títulos mundiais, a seleção voltou ao topo em 2022, no Catar, com Lionel Messi sendo o grande destaque.
+
+Além disso, a Argentina possui vários títulos da Copa América e sempre revelou jogadores de enorme talento, sendo uma das maiores seleções da história do futebol. 🇦🇷
+</p>
+</article>
+
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Argentina possui uma história vitoriosa, com destaque para suas 3 Copas do Mundo (1978, 1986 e 2022).
+
+Também é uma das maiores campeãs da Copa América, com mais de 15 títulos, mostrando sua força no continente.
+
+Essas conquistas colocam a Argentina entre as maiores seleções do mundo.
+</p>
+
+<div class="card">
+    <div class="carda">
+        <img src="img/copa do mundo.jpg">
+        <div class="nome"><h2>Copas do Mundo: 3</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/copaamerica.jpg">
+        <div class="nome"><h2>Copa América: 15+</h2></div>
+    </div>
+</div>
+</article>
+
+<!-- IDOLOS -->
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Argentina revelou alguns dos maiores jogadores da história do futebol.
+
+Diego Maradona é considerado um dos maiores de todos os tempos, sendo o grande nome da Copa de 1986.
+
+Lionel Messi, campeão do mundo em 2022, também entrou definitivamente para a história como um dos maiores jogadores já vistos.
+
+Outros grandes nomes incluem Batistuta, Riquelme e Di María.
+</p>
+
+<div class="card">
+    <div class="carda">
+        <img src="img/messi.jpg">
+        <div class="nome"><h2>Messi</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/maradona.jpg">
+        <div class="nome"><h2>Maradona</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/dimaria.jpg">
+        <div class="nome"><h2>Di María</h2></div>
+    </div>
+</div>
+</article>
+
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/messi.jpg">
+        <div class="nome"><h2>Messi</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/julian.jpg">
+        <div class="nome"><h2>Julián Álvarez</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/lautaro.jpg">
+        <div class="nome"><h2>Lautaro Martínez</h2></div>
+    </div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/depaul.jpg">
+        <div class="nome"><h2>De Paul</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/enzo.jpg">
+        <div class="nome"><h2>Enzo Fernández</h2></div>
+    </div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/otamendi.jpg">
+        <div class="nome"><h2>Otamendi</h2></div>
+    </div>
+
+    <div class="carda">
+        <img src="img/romero.jpg">
+        <div class="nome"><h2>Cuti Romero</h2></div>
+    </div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+    <div class="carda">
+        <img src="img/emiliano.jpg">
+        <div class="nome"><h2>Emiliano Martínez</h2></div>
+    </div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+    document.getElementById("historia").style.display="none";
+    document.getElementById("trofeu").style.display="none";
+    document.getElementById("idolo").style.display="none";
+    document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+    esconderTudo();
+    document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+    esconderTudo();
+    document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+    esconderTudo();
+    document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+    esconderTudo();
+    document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>
