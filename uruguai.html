@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uruguai</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#74acdf,#ffffff,#74acdf);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção Uruguaia</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Uruguaia de Futebol é uma das mais tradicionais do mundo. Foi campeã da primeira Copa do Mundo em 1930, realizada no próprio Uruguai, e voltou a conquistar o título em 1950, no histórico "Maracanazo".
+
+Mesmo sendo um país pequeno, o Uruguai construiu uma história gigante no futebol, marcada por raça, tradição e competitividade.
+
+A equipe sempre se mantém entre as forças da América do Sul, revelando grandes jogadores ao longo das gerações. 🇺🇾
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+O Uruguai possui uma das histórias mais vitoriosas do futebol sul-americano.
+
+São 2 Copas do Mundo conquistadas e mais de 15 títulos da Copa América, sendo uma das seleções mais vencedoras do continente.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa.jpg">
+<div class="nome"><h2>Copas do Mundo: 2</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/copaamerica.jpg">
+<div class="nome"><h2>Copa América: 15+</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+O Uruguai revelou grandes lendas do futebol.
+
+Alcides Ghiggia foi o herói do título de 1950, marcando o gol histórico no Brasil.
+
+Enzo Francescoli é considerado um dos maiores ídolos do país pela sua elegância e talento.
+
+Diego Forlán brilhou na Copa de 2010 e também marcou época na seleção.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/ghiggia.jpg">
+<div class="nome"><h2>Ghiggia</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/francescoli.jpg">
+<div class="nome"><h2>Francescoli</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/forlan.jpg">
+<div class="nome"><h2>Forlán</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/darwin.jpg">
+<div class="nome"><h2>Darwin Núñez</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/suarez.jpg">
+<div class="nome"><h2>Luis Suárez</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/valverde.jpg">
+<div class="nome"><h2>Federico Valverde</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/bentancur.jpg">
+<div class="nome"><h2>Rodrigo Bentancur</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/dearrascaeta.jpg">
+<div class="nome"><h2>De Arrascaeta</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/araujo.jpg">
+<div class="nome"><h2>Ronald Araújo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/gimenez.jpg">
+<div class="nome"><h2>José Giménez</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/vina.jpg">
+<div class="nome"><h2>Matías Viña</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/rochet.jpg">
+<div class="nome"><h2>Sergio Rochet</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/muslera.jpg">
+<div class="nome"><h2>Muslera</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

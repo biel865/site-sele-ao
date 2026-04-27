@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suécia</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#006aa7,#fecc00);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da Suécia</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção da Suécia é uma das mais tradicionais do futebol europeu. Seu maior momento foi na Copa do Mundo de 1958, quando chegou à final jogando em casa.
+
+A equipe também conquistou destaque em várias edições da Copa do Mundo e Eurocopa, sendo sempre uma seleção competitiva.
+
+Conhecida por sua organização tática e jogadores fortes fisicamente, a Suécia tem uma história respeitada no futebol. 🇸🇪
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Suécia não possui títulos mundiais, mas tem campanhas importantes.
+
+Seu maior destaque é o vice-campeonato da Copa do Mundo de 1958, além de várias boas participações internacionais.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa1958.jpg">
+<div class="nome"><h2>Vice Copa 1958</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Suécia revelou grandes jogadores ao longo da história.
+
+Zlatan Ibrahimović é o maior nome do futebol sueco, conhecido mundialmente por sua habilidade e personalidade.
+
+Henrik Larsson também foi um dos grandes atacantes da seleção.
+
+Fredrik Ljungberg marcou época como meio-campista.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/zlatan.jpg">
+<div class="nome"><h2>Zlatan</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/larsson.jpg">
+<div class="nome"><h2>Larsson</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/ljungberg.jpg">
+<div class="nome"><h2>Ljungberg</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/isak.jpg">
+<div class="nome"><h2>Alexander Isak</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/gyokeres.jpg">
+<div class="nome"><h2>Viktor Gyökeres</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/kulusevski.jpg">
+<div class="nome"><h2>Dejan Kulusevski</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/forsberg.jpg">
+<div class="nome"><h2>Emil Forsberg</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/lindelof.jpg">
+<div class="nome"><h2>Victor Lindelöf</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/augustinsson.jpg">
+<div class="nome"><h2>Ludwig Augustinsson</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/olsen.jpg">
+<div class="nome"><h2>Robin Olsen</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

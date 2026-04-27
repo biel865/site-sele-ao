@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alemanha</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#000000,#dd0000,#ffce00);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção Alemã</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Alemã de Futebol é uma das maiores potências da história do futebol mundial. Conhecida por sua disciplina tática e eficiência, a Alemanha construiu uma trajetória marcada por grandes conquistas.
+
+A equipe conquistou sua primeira Copa do Mundo em 1954, no famoso "Milagre de Berna". Depois disso, venceu novamente em 1974, 1990 e 2014.
+
+Ao longo dos anos, a Alemanha se destacou por sempre montar equipes fortes e competitivas, sendo presença constante nas fases finais das grandes competições. 🇩🇪
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Alemanha é uma das seleções mais vitoriosas do mundo.
+
+São 4 Copas do Mundo e 3 títulos da Eurocopa, além de várias finais e campanhas históricas em competições internacionais.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa.jpg">
+<div class="nome"><h2>Copas do Mundo: 4</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/euro.jpg">
+<div class="nome"><h2>Eurocopa: 3</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Alemanha revelou alguns dos maiores jogadores da história.
+
+Franz Beckenbauer foi um dos maiores defensores de todos os tempos e campeão mundial.
+
+Gerd Müller é um dos maiores artilheiros da história do futebol.
+
+Mais recentemente, Miroslav Klose se tornou o maior artilheiro da história das Copas do Mundo.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/beckenbauer.jpg">
+<div class="nome"><h2>Beckenbauer</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/muller.jpg">
+<div class="nome"><h2>Gerd Müller</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/klose.jpg">
+<div class="nome"><h2>Klose</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/havertz.jpg">
+<div class="nome"><h2>Kai Havertz</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/sane.jpg">
+<div class="nome"><h2>Leroy Sané</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/gnabry.jpg">
+<div class="nome"><h2>Serge Gnabry</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/kimmich.jpg">
+<div class="nome"><h2>Joshua Kimmich</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/gundogan.jpg">
+<div class="nome"><h2>Ilkay Gündogan</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/musiala.jpg">
+<div class="nome"><h2>Jamal Musiala</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/rudiger.jpg">
+<div class="nome"><h2>Antonio Rüdiger</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/sule.jpg">
+<div class="nome"><h2>Niklas Süle</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/raum.jpg">
+<div class="nome"><h2>David Raum</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/terstegen.jpg">
+<div class="nome"><h2>Ter Stegen</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/neuer.jpg">
+<div class="nome"><h2>Manuel Neuer</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

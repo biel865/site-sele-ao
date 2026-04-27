@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equador</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#fcd116,#003893,#ce1126);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção do Equador</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção do Equador vem crescendo no cenário do futebol sul-americano nas últimas décadas. Sua primeira participação em Copa do Mundo foi em 2002, marcando o início de uma nova fase no futebol do país.
+
+O melhor desempenho aconteceu em 2006, quando chegou às oitavas de final. Desde então, o Equador tem se consolidado como uma seleção competitiva na América do Sul.
+
+Com uma nova geração de jogadores talentosos, o país segue evoluindo e buscando maiores conquistas. 🇪🇨
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+O Equador ainda busca seu primeiro grande título internacional, mas já conquistou campanhas importantes nas Eliminatórias Sul-Americanas e participações em Copas do Mundo.
+
+A seleção é reconhecida por sua evolução constante e competitividade.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/eliminatorias.jpg">
+<div class="nome"><h2>Participações em Copas</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A história do Equador conta com grandes jogadores.
+
+Antonio Valencia foi um dos principais nomes, com destaque no futebol europeu.
+
+Enner Valencia é um dos maiores artilheiros da seleção e figura importante nas Copas do Mundo.
+
+Agustín Delgado também marcou época com seus gols decisivos.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/valencia.jpg">
+<div class="nome"><h2>Antonio Valencia</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/enner.jpg">
+<div class="nome"><h2>Enner Valencia</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/delgado.jpg">
+<div class="nome"><h2>Agustín Delgado</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/enner.jpg">
+<div class="nome"><h2>Enner Valencia</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/estrada.jpg">
+<div class="nome"><h2>Michael Estrada</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/plata.jpg">
+<div class="nome"><h2>Gonzalo Plata</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/caicedo.jpg">
+<div class="nome"><h2>Moisés Caicedo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/mendez.jpg">
+<div class="nome"><h2>Jhegson Méndez</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/franco.jpg">
+<div class="nome"><h2>Alan Franco</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/hincapie.jpg">
+<div class="nome"><h2>Piero Hincapié</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/torres.jpg">
+<div class="nome"><h2>Félix Torres</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/estupinan.jpg">
+<div class="nome"><h2>Pervis Estupiñán</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/galindez.jpg">
+<div class="nome"><h2>Hernán Galíndez</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/dominguez.jpg">
+<div class="nome"><h2>Alexander Domínguez</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

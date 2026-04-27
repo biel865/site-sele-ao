@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turquia</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#e30a17,#ffffff,#e30a17);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da Turquia</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção da Turquia teve seu maior momento na Copa do Mundo de 2002, quando surpreendeu o mundo ao conquistar o terceiro lugar.
+
+Também teve destaque na Eurocopa de 2008, chegando às semifinais com uma campanha emocionante.
+
+A Turquia é conhecida por sua torcida apaixonada e por equipes competitivas. 🇹🇷
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Turquia não possui títulos de grande expressão, mas tem campanhas marcantes.
+
+O maior destaque é o terceiro lugar na Copa do Mundo de 2002 e a semifinal da Euro 2008.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa2002.jpg">
+<div class="nome"><h2>3º lugar Copa 2002</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/euro2008.jpg">
+<div class="nome"><h2>Semifinal Euro 2008</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Turquia teve grandes jogadores.
+
+Hakan Şükür foi o principal nome da campanha de 2002 e um dos maiores artilheiros da seleção.
+
+Arda Turan também foi um dos grandes talentos do futebol turco.
+
+Mais recentemente, Hakan Çalhanoğlu se destaca como líder da equipe.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/sukur.jpg">
+<div class="nome"><h2>Hakan Şükür</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/arda.jpg">
+<div class="nome"><h2>Arda Turan</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/calhanoglu.jpg">
+<div class="nome"><h2>Çalhanoğlu</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/yilmaz.jpg">
+<div class="nome"><h2>Burak Yılmaz</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/under.jpg">
+<div class="nome"><h2>Cengiz Ünder</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/calhanoglu.jpg">
+<div class="nome"><h2>Hakan Çalhanoğlu</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/kokcu.jpg">
+<div class="nome"><h2>Orkun Kökçü</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/demiral.jpg">
+<div class="nome"><h2>Merih Demiral</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/soyuncu.jpg">
+<div class="nome"><h2>Çağlar Söyüncü</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/gunok.jpg">
+<div class="nome"><h2>Mert Günok</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

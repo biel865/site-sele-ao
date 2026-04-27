@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bósnia e Herzegovina</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#002395,#fecb00);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da Bósnia e Herzegovina</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção da Bósnia e Herzegovina surgiu após a independência do país nos anos 1990. Apesar de ser uma seleção relativamente recente, conseguiu crescer rapidamente no cenário europeu.
+
+O maior momento da sua história foi a classificação para a Copa do Mundo de 2014, no Brasil, sendo sua primeira participação no torneio.
+
+Desde então, a equipe segue buscando se firmar entre as seleções competitivas da Europa, revelando jogadores talentosos. 🇧🇦
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Bósnia e Herzegovina ainda busca seu primeiro grande título internacional.
+
+Seu principal feito até hoje é a participação na Copa do Mundo de 2014, além de campanhas competitivas nas eliminatórias europeias.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa2014.jpg">
+<div class="nome"><h2>Copa do Mundo 2014</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A seleção contou com grandes jogadores que marcaram sua história.
+
+Edin Džeko é o maior nome do país, sendo o principal artilheiro da seleção.
+
+Miralem Pjanić também foi um dos grandes destaques, com sua qualidade no meio-campo.
+
+Asmir Begović ficou conhecido como um dos melhores goleiros da história da seleção.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/dzeko.jpg">
+<div class="nome"><h2>Džeko</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/pjanic.jpg">
+<div class="nome"><h2>Pjanić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/begovic.jpg">
+<div class="nome"><h2>Begović</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/dzeko.jpg">
+<div class="nome"><h2>Edin Džeko</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/demirovic.jpg">
+<div class="nome"><h2>Ermedin Demirović</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/pjanic.jpg">
+<div class="nome"><h2>Miralem Pjanić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/krunic.jpg">
+<div class="nome"><h2>Rade Krunić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/cimirot.jpg">
+<div class="nome"><h2>Gojko Cimirot</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/kolasinac.jpg">
+<div class="nome"><h2>Sead Kolašinac</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/ahmedhodzic.jpg">
+<div class="nome"><h2>Anel Ahmedhodžić</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/sehic.jpg">
+<div class="nome"><h2>Ibrahim Šehić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/begovic.jpg">
+<div class="nome"><h2>Begović</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

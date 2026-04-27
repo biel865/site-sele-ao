@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suíça</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#d52b1e,#ffffff,#d52b1e);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da Suíça</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção da Suíça é uma equipe tradicional do futebol europeu, conhecida por sua organização tática e disciplina em campo.
+
+Participou de várias Copas do Mundo e Eurocopas, geralmente chegando às fases eliminatórias.
+
+A Suíça é reconhecida por ser uma seleção difícil de enfrentar, com um jogo coletivo forte. 🇨🇭
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Suíça ainda busca seu primeiro grande título internacional.
+
+Seu melhor desempenho em Copas do Mundo foi chegar às quartas de final, além de boas campanhas em torneios europeus.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/quartas.jpg">
+<div class="nome"><h2>Quartas de Final</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Suíça teve jogadores importantes ao longo dos anos.
+
+Stéphane Chapuisat foi um dos grandes nomes históricos da seleção.
+
+Xherdan Shaqiri é um dos principais jogadores modernos, conhecido por seus gols importantes.
+
+Granit Xhaka também se destaca como líder no meio-campo.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/chapuisat.jpg">
+<div class="nome"><h2>Chapuisat</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/shaqiri.jpg">
+<div class="nome"><h2>Shaqiri</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/xhaka.jpg">
+<div class="nome"><h2>Xhaka</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/embolo.jpg">
+<div class="nome"><h2>Breel Embolo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/okafor.jpg">
+<div class="nome"><h2>Noah Okafor</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/xhaka.jpg">
+<div class="nome"><h2>Granit Xhaka</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/freuler.jpg">
+<div class="nome"><h2>Remo Freuler</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/akanji.jpg">
+<div class="nome"><h2>Manuel Akanji</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/rodriguez.jpg">
+<div class="nome"><h2>Ricardo Rodríguez</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/sommer.jpg">
+<div class="nome"><h2>Yann Sommer</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

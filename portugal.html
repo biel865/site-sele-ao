@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portugal</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#006600,#ff0000);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção Portuguesa</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Portuguesa cresceu muito no futebol mundial nas últimas décadas. Durante muitos anos, revelou grandes jogadores, mas sem conquistar títulos importantes.
+
+Isso mudou em 2016, quando Portugal venceu a Eurocopa, seu maior título, liderado por Cristiano Ronaldo.
+
+Em 2019, conquistou a Liga das Nações da UEFA, consolidando-se como uma das principais seleções da Europa. 🇵🇹
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+Portugal possui conquistas importantes recentes.
+
+São 1 Eurocopa (2016) e 1 Liga das Nações (2019), marcando a melhor fase da sua história.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/euro2016.jpg">
+<div class="nome"><h2>Eurocopa: 1</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/nations.jpg">
+<div class="nome"><h2>Liga das Nações: 1</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+Portugal teve grandes jogadores ao longo da história.
+
+Cristiano Ronaldo é o maior nome do futebol português e um dos maiores jogadores de todos os tempos.
+
+Luís Figo também foi um grande destaque, vencedor da Bola de Ouro.
+
+Eusébio foi o primeiro grande ídolo da seleção, brilhando na Copa de 1966.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/cr7.jpg">
+<div class="nome"><h2>Cristiano Ronaldo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/figo.jpg">
+<div class="nome"><h2>Figo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/eusebio.jpg">
+<div class="nome"><h2>Eusébio</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/cr7.jpg">
+<div class="nome"><h2>Cristiano Ronaldo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/leao.jpg">
+<div class="nome"><h2>Rafael Leão</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/felix.jpg">
+<div class="nome"><h2>João Félix</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/bruno.jpg">
+<div class="nome"><h2>Bruno Fernandes</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/bernardo.jpg">
+<div class="nome"><h2>Bernardo Silva</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/vitinha.jpg">
+<div class="nome"><h2>Vitinha</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/dias.jpg">
+<div class="nome"><h2>Rúben Dias</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/cancelo.jpg">
+<div class="nome"><h2>João Cancelo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/mendes.jpg">
+<div class="nome"><h2>Nuno Mendes</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/costa.jpg">
+<div class="nome"><h2>Diogo Costa</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/patricio.jpg">
+<div class="nome"><h2>Rui Patrício</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>França</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#0055a4,#ffffff,#ef4135);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção Francesa</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Francesa é uma das maiores potências do futebol mundial. Sua primeira grande conquista veio em 1998, quando venceu a Copa do Mundo em casa.
+
+Em 2018, a França voltou ao topo do mundo com uma geração jovem e talentosa. Também foi vice-campeã em 2006 e 2022.
+
+Conhecida pelo seu futebol técnico e físico, a França sempre revela grandes jogadores. 🇫🇷
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A França possui uma história vitoriosa no futebol internacional.
+
+São 2 Copas do Mundo (1998 e 2018) e 2 títulos da Eurocopa, além de outras conquistas importantes.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa1998.jpg">
+<div class="nome"><h2>Copas do Mundo: 2</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/euro.jpg">
+<div class="nome"><h2>Eurocopa: 2</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A França teve grandes jogadores ao longo da história.
+
+Zinedine Zidane foi o grande nome da conquista de 1998 e um dos maiores da história.
+
+Thierry Henry é o maior artilheiro da seleção por muitos anos.
+
+Mais recentemente, Kylian Mbappé se tornou o principal nome da nova geração.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/zidane.jpg">
+<div class="nome"><h2>Zidane</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/henry.jpg">
+<div class="nome"><h2>Henry</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/mbappe.jpg">
+<div class="nome"><h2>Mbappé</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/mbappe.jpg">
+<div class="nome"><h2>Kylian Mbappé</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/griezmann.jpg">
+<div class="nome"><h2>Antoine Griezmann</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/dembele.jpg">
+<div class="nome"><h2>Ousmane Dembélé</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/tchouameni.jpg">
+<div class="nome"><h2>Aurélien Tchouaméni</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/camavinga.jpg">
+<div class="nome"><h2>Eduardo Camavinga</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/rabiot.jpg">
+<div class="nome"><h2>Adrien Rabiot</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/hernandez.jpg">
+<div class="nome"><h2>Theo Hernández</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/kounde.jpg">
+<div class="nome"><h2>Jules Koundé</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/upamecano.jpg">
+<div class="nome"><h2>Dayot Upamecano</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/maignan.jpg">
+<div class="nome"><h2>Mike Maignan</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/lloris.jpg">
+<div class="nome"><h2>Hugo Lloris</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

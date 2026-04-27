@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>República Tcheca</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#11457e,#ffffff,#d7141a);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da República Tcheca</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção da República Tcheca surgiu após a divisão da Tchecoslováquia em 1993. Mesmo sendo uma seleção relativamente nova, rapidamente mostrou sua força no futebol europeu.
+
+Seu maior destaque foi na Eurocopa de 1996, quando chegou à final e ficou com o vice-campeonato.
+
+A equipe também teve boas campanhas em competições europeias e revelou grandes jogadores ao longo dos anos. 🇨🇿
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A República Tcheca ainda busca seu primeiro grande título como país independente.
+
+Seu principal feito foi o vice-campeonato da Eurocopa de 1996, além de boas campanhas em torneios internacionais.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/euro1996.jpg">
+<div class="nome"><h2>Vice Euro 1996</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A seleção revelou grandes jogadores.
+
+Pavel Nedvěd foi o maior nome do país, vencedor da Bola de Ouro.
+
+Petr Čech é considerado um dos melhores goleiros da história do futebol.
+
+Milan Baroš também foi destaque como atacante.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/nedved.jpg">
+<div class="nome"><h2>Nedvěd</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/cech.jpg">
+<div class="nome"><h2>Čech</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/baros.jpg">
+<div class="nome"><h2>Baroš</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/schick.jpg">
+<div class="nome"><h2>Patrik Schick</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/kuchta.jpg">
+<div class="nome"><h2>Jan Kuchta</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/soucek.jpg">
+<div class="nome"><h2>Tomáš Souček</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/cerny.jpg">
+<div class="nome"><h2>Václav Černý</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/barak.jpg">
+<div class="nome"><h2>Antonín Barák</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/coufal.jpg">
+<div class="nome"><h2>Vladimír Coufal</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/holes.jpg">
+<div class="nome"><h2>Tomáš Holeš</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/pavlenka.jpg">
+<div class="nome"><h2>Jiří Pavlenka</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

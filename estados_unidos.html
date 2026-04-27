@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estados Unidos</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#3c3b6e,#ffffff,#b22234);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção dos Estados Unidos</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção dos Estados Unidos tem crescido muito no cenário do futebol ao longo das últimas décadas. Apesar de não ter a mesma tradição que as potências europeias e sul-americanas, o país vem investindo forte no esporte.
+
+Seu melhor desempenho em Copas do Mundo foi em 1930, quando chegou às semifinais. Nos tempos recentes, a equipe tem se tornado mais competitiva, principalmente na CONCACAF.
+
+Com uma nova geração de jogadores atuando na Europa, os Estados Unidos vêm se consolidando como uma seleção forte e em constante evolução. 🇺🇸
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+Os Estados Unidos são uma das seleções mais vitoriosas da CONCACAF.
+
+A equipe conquistou várias edições da Copa Ouro, sendo uma das maiores campeãs da competição, além de títulos da Liga das Nações da CONCACAF.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/goldcup.jpg">
+<div class="nome"><h2>Copa Ouro: 7</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/nations.jpg">
+<div class="nome"><h2>Liga das Nações: 3</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A seleção americana teve grandes nomes ao longo da sua história.
+
+Landon Donovan é considerado um dos maiores jogadores do país, sendo decisivo em várias competições.
+
+Clint Dempsey também marcou época com sua habilidade e gols importantes.
+
+Mais recentemente, Christian Pulisic se tornou o principal nome da nova geração.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/donovan.jpg">
+<div class="nome"><h2>Landon Donovan</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/dempsey.jpg">
+<div class="nome"><h2>Clint Dempsey</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/pulisic.jpg">
+<div class="nome"><h2>Pulisic</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/pulisic.jpg">
+<div class="nome"><h2>Christian Pulisic</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/weah.jpg">
+<div class="nome"><h2>Timothy Weah</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/pepi.jpg">
+<div class="nome"><h2>Ricardo Pepi</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/balogun.jpg">
+<div class="nome"><h2>Folarin Balogun</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/mckennie.jpg">
+<div class="nome"><h2>Weston McKennie</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/adams.jpg">
+<div class="nome"><h2>Tyler Adams</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/musah.jpg">
+<div class="nome"><h2>Yunus Musah</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/reyna.jpg">
+<div class="nome"><h2>Gio Reyna</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/dest.jpg">
+<div class="nome"><h2>Sergiño Dest</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/robinson.jpg">
+<div class="nome"><h2>Antonee Robinson</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/reampie.jpg">
+<div class="nome"><h2>Tim Ream</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/ccv.jpg">
+<div class="nome"><h2>Cameron Carter-Vickers</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/turner.jpg">
+<div class="nome"><h2>Matt Turner</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/steffen.jpg">
+<div class="nome"><h2>Zack Steffen</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

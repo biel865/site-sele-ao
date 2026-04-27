@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noruega</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#ba0c2f,#ffffff,#00205b);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da Noruega</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção da Noruega teve seus melhores momentos nas décadas de 1990 e início dos anos 2000, quando conseguiu boas campanhas em competições internacionais.
+
+Participou de Copas do Mundo como em 1994 e 1998, chegando às oitavas de final em 1998.
+
+Atualmente, a seleção vive um novo momento de crescimento com jovens talentos e busca voltar ao cenário internacional. 🇳🇴
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Noruega não possui títulos de grande expressão no futebol mundial.
+
+Seu destaque fica por boas participações em Copas do Mundo e competições europeias.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa1998.jpg">
+<div class="nome"><h2>Oitavas 1998</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Noruega revelou jogadores importantes.
+
+Ole Gunnar Solskjær foi um dos maiores ídolos do país, conhecido por sua passagem pelo Manchester United.
+
+Atualmente, Erling Haaland é o principal nome da seleção e um dos melhores atacantes do mundo.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/solskjaer.jpg">
+<div class="nome"><h2>Solskjær</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/haaland.jpg">
+<div class="nome"><h2>Haaland</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/haaland.jpg">
+<div class="nome"><h2>Erling Haaland</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/sorloth.jpg">
+<div class="nome"><h2>Alexander Sørloth</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/odegaard.jpg">
+<div class="nome"><h2>Martin Ødegaard</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/berg.jpg">
+<div class="nome"><h2>Sander Berge</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/ryerson.jpg">
+<div class="nome"><h2>Julian Ryerson</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/strandberg.jpg">
+<div class="nome"><h2>Stefan Strandberg</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/nyland.jpg">
+<div class="nome"><h2>Ørjan Nyland</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

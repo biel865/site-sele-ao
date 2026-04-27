@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escócia</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#0065bd,#ffffff,#0065bd);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da Escócia</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção da Escócia é uma das mais antigas do futebol mundial, tendo participado de algumas das primeiras competições internacionais da história.
+
+Apesar de não possuir grandes títulos, a Escócia já participou de várias Copas do Mundo, com destaque para suas campanhas nas décadas de 1970 e 1980.
+
+Nos últimos anos, a seleção voltou a crescer e tem se tornado mais competitiva nas competições europeias. 🇬🇧
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Escócia não possui títulos de grande expressão internacional, mas tem tradição histórica no futebol.
+
+A equipe participou de diversas Copas do Mundo e Eurocopas, sendo reconhecida por sua longa história no esporte.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/hampden.jpg">
+<div class="nome"><h2>História Tradicional</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Escócia revelou jogadores importantes ao longo dos anos.
+
+Kenny Dalglish é considerado o maior jogador da história do país.
+
+Denis Law também foi um dos grandes nomes do futebol escocês.
+
+Mais recentemente, Andy Robertson se destacou como um dos principais jogadores da seleção.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/dalglish.jpg">
+<div class="nome"><h2>Dalglish</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/law.jpg">
+<div class="nome"><h2>Denis Law</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/robertson.jpg">
+<div class="nome"><h2>Robertson</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/dykes.jpg">
+<div class="nome"><h2>Lyndon Dykes</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/adams.jpg">
+<div class="nome"><h2>Che Adams</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/mctominay.jpg">
+<div class="nome"><h2>Scott McTominay</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/mcginn.jpg">
+<div class="nome"><h2>John McGinn</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/gilmour.jpg">
+<div class="nome"><h2>Billy Gilmour</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/robertson.jpg">
+<div class="nome"><h2>Andrew Robertson</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/tierney.jpg">
+<div class="nome"><h2>Kieran Tierney</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/gordon.jpg">
+<div class="nome"><h2>Craig Gordon</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/gunn.jpg">
+<div class="nome"><h2>Angus Gunn</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holanda</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#ae1c28,#ffffff,#21468b);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção Holandesa</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Holandesa, conhecida como "Laranja Mecânica", é uma das mais tradicionais do futebol mundial. Ficou famosa nos anos 1970 com o estilo de jogo inovador chamado "futebol total".
+
+A Holanda chegou a três finais de Copa do Mundo (1974, 1978 e 2010), mas acabou ficando com o vice-campeonato em todas.
+
+Mesmo sem títulos mundiais, a seleção é respeitada pelo seu futebol ofensivo e pela formação de grandes jogadores. 🇳🇱
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Holanda possui um título importante: a Eurocopa de 1988.
+
+Além disso, tem três vice-campeonatos mundiais, mostrando sua força histórica no futebol.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/euro1988.jpg">
+<div class="nome"><h2>Eurocopa: 1</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/copaVice.jpg">
+<div class="nome"><h2>Vice Copas: 3</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Holanda revelou alguns dos maiores jogadores da história.
+
+Johan Cruyff foi o principal nome do futebol total e um dos maiores jogadores de todos os tempos.
+
+Marco van Basten foi decisivo no título da Euro de 1988.
+
+Mais recentemente, Arjen Robben marcou época com sua velocidade e habilidade.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/cruyff.jpg">
+<div class="nome"><h2>Cruyff</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/vanbasten.jpg">
+<div class="nome"><h2>Van Basten</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/robben.jpg">
+<div class="nome"><h2>Robben</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/gakpo.jpg">
+<div class="nome"><h2>Cody Gakpo</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/depay.jpg">
+<div class="nome"><h2>Memphis Depay</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/dejong.jpg">
+<div class="nome"><h2>Frenkie de Jong</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/reijnders.jpg">
+<div class="nome"><h2>Tijjani Reijnders</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/vanDijk.jpg">
+<div class="nome"><h2>Virgil van Dijk</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/dumfries.jpg">
+<div class="nome"><h2>Denzel Dumfries</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/verbruggen.jpg">
+<div class="nome"><h2>Bart Verbruggen</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

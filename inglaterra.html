@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inglaterra</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#ffffff,#cf142b,#ffffff);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção Inglesa</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Inglesa é considerada a criadora do futebol moderno. Apesar de sua longa tradição, conquistou apenas uma Copa do Mundo, em 1966, jogando em casa.
+
+Ao longo dos anos, a Inglaterra teve várias gerações talentosas, mas muitas vezes não conseguiu transformar isso em títulos.
+
+Recentemente, a equipe voltou a crescer, chegando à final da Euro 2020 e sendo presença constante entre as melhores seleções do mundo. 🏴
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Inglaterra possui um título importante na sua história.
+
+Foi campeã da Copa do Mundo de 1966 e também tem boas campanhas em Eurocopas, incluindo um vice-campeonato recente.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa1966.jpg">
+<div class="nome"><h2>Copa do Mundo: 1</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/euroVice.jpg">
+<div class="nome"><h2>Vice Euro</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Inglaterra teve grandes jogadores na sua história.
+
+Bobby Charlton foi um dos heróis do título de 1966.
+
+David Beckham marcou época com sua habilidade e liderança.
+
+Mais recentemente, Harry Kane se tornou o principal artilheiro da seleção.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/charlton.jpg">
+<div class="nome"><h2>Bobby Charlton</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/beckham.jpg">
+<div class="nome"><h2>David Beckham</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/kane.jpg">
+<div class="nome"><h2>Harry Kane</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/kane.jpg">
+<div class="nome"><h2>Harry Kane</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/saka.jpg">
+<div class="nome"><h2>Bukayo Saka</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/foden.jpg">
+<div class="nome"><h2>Phil Foden</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/bellingham.jpg">
+<div class="nome"><h2>Jude Bellingham</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/rice.jpg">
+<div class="nome"><h2>Declan Rice</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/maddison.jpg">
+<div class="nome"><h2>James Maddison</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/walker.jpg">
+<div class="nome"><h2>Kyle Walker</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/stones.jpg">
+<div class="nome"><h2>John Stones</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/shaw.jpg">
+<div class="nome"><h2>Luke Shaw</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/pickford.jpg">
+<div class="nome"><h2>Jordan Pickford</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/ramsdale.jpg">
+<div class="nome"><h2>Aaron Ramsdale</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>

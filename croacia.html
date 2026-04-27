@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Croácia</title>
+
+<style>
+body{
+    background: linear-gradient(180deg,#0d1b2a,#1b263b);
+}
+
+.cbc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:150px;
+    width:100%;
+    background: linear-gradient(90deg,#ff0000,#ffffff,#171796);
+}
+
+#texto{
+    font-size:3rem;
+    font-style:italic;
+}
+
+#link{
+    display:flex;
+    justify-content:center;
+}
+
+#link a{
+    padding:15px;
+    text-decoration:none;
+    color:white;
+}
+
+#historia,#trofeu,#idolo,#jogador{
+    display:none;
+}
+
+p{
+    font-size:1.3rem;
+    font-style:italic;
+    text-indent:20px;
+}
+
+.card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+.carda{
+    width:220px;
+    background:#1b263b;
+    border-radius:10px;
+    overflow:hidden;
+    margin:10px;
+    transition:0.3s;
+}
+
+.carda img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.carda:hover{
+    transform:scale(1.1);
+}
+
+.nome{
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.carda:hover .nome{
+    opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<header class="cbc">
+<h1 id="texto">Seleção da Croácia</h1>
+</header>
+
+<nav id="link">
+<a href="#" onclick="historia()">historia</a>
+<a href="#" onclick="trofeu()">trofeus</a>
+<a href="#" onclick="idolo()">idolos</a>
+<a href="#" onclick="jogador()">seleçao atual</a>
+</nav>
+
+<main>
+<section>
+
+<article id="historia">
+<h1>historia:</h1>
+<p>
+A Seleção Croata surgiu após a independência do país nos anos 1990 e rapidamente se tornou uma das forças do futebol europeu.
+
+Seu primeiro grande destaque foi na Copa do Mundo de 1998, quando conquistou o terceiro lugar com uma geração talentosa liderada por Davor Šuker.
+
+O maior feito da história veio em 2018, quando a Croácia chegou à final da Copa do Mundo, terminando como vice-campeã. Em 2022, voltou a se destacar ficando em terceiro lugar.
+
+Mesmo sendo um país pequeno, a Croácia é conhecida por revelar grandes jogadores e equipes competitivas. 🇭🇷
+</p>
+</article>
+
+<article id="trofeu">
+<h1>trofeus:</h1>
+<p>
+A Croácia ainda busca seu primeiro título mundial, mas já possui campanhas históricas.
+
+Os principais destaques são o vice-campeonato da Copa do Mundo de 2018 e o terceiro lugar em 1998 e 2022.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/copa2018.jpg">
+<div class="nome"><h2>Vice Copa do Mundo 2018</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/copa3.jpg">
+<div class="nome"><h2>3º lugar Copas</h2></div>
+</div>
+</div>
+</article>
+
+<article id="idolo">
+<h1>idolos:</h1>
+<p>
+A Croácia revelou grandes jogadores.
+
+Davor Šuker foi o destaque de 1998 e um dos maiores atacantes do país.
+
+Luka Modrić é considerado o maior jogador da história da Croácia, vencedor da Bola de Ouro e líder da geração mais recente.
+
+Ivan Rakitić também foi fundamental nas conquistas recentes da seleção.
+</p>
+
+<div class="card">
+<div class="carda">
+<img src="img/suker.jpg">
+<div class="nome"><h2>Šuker</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/modric.jpg">
+<div class="nome"><h2>Modrić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/rakitic.jpg">
+<div class="nome"><h2>Rakitić</h2></div>
+</div>
+</div>
+</article>
+
+<article id="jogador">
+
+<h2 style="text-align:center">Ataque</h2>
+<div class="card">
+<div class="carda">
+<img src="img/perisic.jpg">
+<div class="nome"><h2>Ivan Perišić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/kramaric.jpg">
+<div class="nome"><h2>Andrej Kramarić</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Meio</h2>
+<div class="card">
+<div class="carda">
+<img src="img/modric.jpg">
+<div class="nome"><h2>Luka Modrić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/kovacic.jpg">
+<div class="nome"><h2>Mateo Kovačić</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/brozovic.jpg">
+<div class="nome"><h2>Marcelo Brozović</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Defesa</h2>
+<div class="card">
+<div class="carda">
+<img src="img/guardio.jpg">
+<div class="nome"><h2>Joško Gvardiol</h2></div>
+</div>
+
+<div class="carda">
+<img src="img/lovren.jpg">
+<div class="nome"><h2>Dejan Lovren</h2></div>
+</div>
+</div>
+
+<h2 style="text-align:center">Goleiros</h2>
+<div class="card">
+<div class="carda">
+<img src="img/livakovic.jpg">
+<div class="nome"><h2>Dominik Livaković</h2></div>
+</div>
+</div>
+
+</article>
+
+</section>
+</main>
+
+<script>
+function esconderTudo(){
+document.getElementById("historia").style.display="none";
+document.getElementById("trofeu").style.display="none";
+document.getElementById("idolo").style.display="none";
+document.getElementById("jogador").style.display="none";
+}
+
+function historia(){
+esconderTudo();
+document.getElementById("historia").style.display="block";
+}
+
+function trofeu(){
+esconderTudo();
+document.getElementById("trofeu").style.display="block";
+}
+
+function idolo(){
+esconderTudo();
+document.getElementById("idolo").style.display="block";
+}
+
+function jogador(){
+esconderTudo();
+document.getElementById("jogador").style.display="block";
+}
+</script>
+
+</body>
+</html>
